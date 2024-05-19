@@ -1,0 +1,31 @@
+@font-face {
+    font-family: My font;
+    src: url(fonts/Jersey10-Regular.ttf);
+}
+
+#countLabel {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: "My font", Geneva, Tahoma, sans-serif;
+    color:rgb(209, 58, 184);
+    text-shadow: 2px 2px 5px #e70f7b;
+}
+
+#buttonContainer {
+    text-align: center;
+}
+
+.buttons {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(92, 184, 201);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.buttons:hover {
+    background-color: rgb(156, 211, 191);
+}
