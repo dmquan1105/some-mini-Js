@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="https://kit.fontawesome.com/436f46d7d9.js" crossorigin="anonymous"></script>
+    <title>Random Password</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Password Generator</h1>
+        <div class="inputBox">
+            <input class="passBox" id="passBox" disabled/>
+            <span class="material-icons" id="copyIcon"><i class="fa-regular fa-copy"></i></span>
+            <span class="material-icons del" id="checkIcon"><i class="fa-solid fa-check"></i></span>
+        </div>
+        <div class="pass-indicator" id="passIndicator"></div>
+        <input type="range" id="inputSlider" min="1" max="30" value="6" step="1"/>
+
+        <div class="row">
+            <p>Password Length</p>
+            <span id="sliderValue"></span>
+        </div>
+
+        <div class="row">
+            <label for="lowercase">Include Lowercase Letters (a-z)</label>
+            <input type="checkbox" name="lowercase" id="lowercase" checked>
+        </div>
+
+        <div class="row">
+            <label for="uppercase">Include Uppercase Letters (A-Z)</label>
+            <input type="checkbox" name="uppercase" id="uppercase" checked>
+        </div>
+
+        <div class="row">
+            <label for="numbers">Include Numbers (0-9)</label>
+            <input type="checkbox" name="numbers" id="numbers" checked>
+        </div>
+
+        <div class="row">
+            <label for="symbols">Include Symbols (@-*)</label>
+            <input type="checkbox" name="symbols" id="symbols">
+        </div>
+    <button class="genBtn" id="genBtn">Generate Password</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
