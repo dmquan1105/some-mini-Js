@@ -90,4 +90,17 @@ document.addEventListener("DOMContentLoaded", () => {
         return result.trim();
     }
 
+    btnReset.onclick = function() {
+        cashInputs.forEach((input) => {
+            input.value = "";
+        })
+
+        // make animation for txtFinalCash and txtFinalCashInWords
+        txtFinalCash.style.animation = "fadeOut 0.5s";
+        txtFinalCashInWords.style.animation = "fadeOut 0.5s";
+        // reset text content
+        txtFinalCash.textContent = "Total Cash: 0";
+        txtFinalCashInWords.textContent = "Total cash in words: Zero";
+    }
+
 })
