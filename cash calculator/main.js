@@ -95,6 +95,10 @@ document.addEventListener("DOMContentLoaded", () => {
             input.value = "";
         })
 
+        cashTexts.forEach((text) => {
+            text.textContent = "0";
+        })
+
         // make animation for txtFinalCash and txtFinalCashInWords
         txtFinalCash.style.animation = "fadeOut 0.5s";
         txtFinalCashInWords.style.animation = "fadeOut 0.5s";
