@@ -1,3 +1,5 @@
 # Some mini project
 
-With HTML, CSS and JS
+With HTML, CSS and Javascript.
+
+(●'◡'●)
